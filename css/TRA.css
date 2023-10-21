@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #0078D4;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+nav.guide-card {
+    width: 200px;
+}
+/* nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+} */
+nav{
+    padding: 10px;
+    margin: 5px;
+    background-color: #aaa;
+    position: fixed;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav li {
+    margin: 20px 0px;
+}
+nav a{
+    font-family:微軟正黑體;
+    color: #333;
+}
+h1, h2 {
+    text-align: center;
+}
+.county {
+    /* font-family: 黑體-繁, 頻方-繁, "Heiti TC", 微軟正黑體, "Microsoft JhengHei", Arial, serif; */
+    font-family:微軟正黑體;
+    box-sizing: border-box;
+    text-decoration: none;
+    position: absolute;
+    font-size: 0.7em;
+    line-height: 14px;
+    padding: 1.5px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #888;
+    /* background-color: #e0eaa4;
+    border-radius: 7px;
+    border-style:solid;
+    color: #666; */
+    z-index: 2;
+}
+.map-left{
+    position: relative;
+}
+.sub {
+    background-color: #9397e7;
+}
+.map-selector a.active{
+    background-color: #a00;
+}
+.map-image img{
+    background-color: #d7f2fb;
+}
+.map-country{
+    /* font-family: 黑體-繁, 頻方-繁, "Heiti TC", 微軟正黑體, "Microsoft JhengHei", Arial, serif; */
+    font-family: 黑體-繁;
+    line-height: 1.6;
+    font-size: 1em;
+    color: #333;
+    box-sizing: border-box;
+    float: right;
+    width: 230px;
+} 
+.map-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.map-right div.active{
+    display: block; 
+}
+
+.map-country{
+    display: none;
+}
+.map-right{
+    position: relative;
+}
+.main{
+    position: relative;
+    margin-left: 160px;
+    padding: 20px;
+    background-color: #c6ef9d;
+}
+.main section {
+    text-align: left;
+    max-width: 90%;
+    margin: 0 auto;
+}
+#railway-intro{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto;
+}
+#railway-intro h2{
+    grid-row: 1; 
+    grid-column: 1 / span 2;
+}
+#railway-intro .tra-text{
+    grid-row: 2;
+    grid-column: 1;
+    width: 150%;
+}
+#railway-intro .tra-logo{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    grid-row: 2; 
+    grid-column: 2; 
+    justify-self: flex-end;
+    margin-right: 10%;
+}
