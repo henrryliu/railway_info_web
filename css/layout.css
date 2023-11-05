@@ -578,12 +578,106 @@ ul.submenu2 a:hover {
 
 .route-map {
   display: none;
+  width: 220px;
+  height: 800px;
 }
 
 .route-map.active {
   display: block;
 }
 
+/* .route-map img {
+  width: 220px;
+} */
+
 .intro{
+  display: none;
   margin-top: 3em;
+}
+
+.intro.active{
+  display: block;
+}
+
+.vertical-line {
+  position: relative;
+  z-index: 1;
+}
+
+.vertical-line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 120px;
+  left: var(--left);
+  width: 2px; 
+  border-left: 10px solid ;
+  border-color: var(--color);
+  height: var(--height);
+}
+
+.horizontal-line {
+  position: relative;
+  width: var(--width);
+  border-top: 10px solid var(--color); /* 添加横线样式 */
+  z-index: 0;
+}
+
+.station {
+  position: absolute;
+  top: 0;
+  left: 105px;
+  width: 50%;
+  height: 100%;
+  font-weight: 500;
+}
+
+.station a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 13px;
+  width: 170px;
+}
+
+.station a:hover{
+  color: #0000ff;
+  font-weight: 1000;
+  font-size: medium;
+}
+
+.station a span{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.stanum{
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 1px;
+  margin-right: 5px;
+  min-width: 35px;
+  height: 17px;
+  text-align: center;
+  line-height: 17px;
+}
+
+.travel_box-inner ul li{
+  list-style: none;
+  margin-left: -40px;
+}
+
+.article{
+  display: flex;
+  align-items: center;
+}
+
+.article p{
+  flex: 1;
+}
+.article img{
+  width: 40%;
+  margin:0px 10px;
 }
