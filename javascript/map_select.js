@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const verticalLines = document.querySelectorAll(".vertical-line");
     verticalLines.forEach((verticalLine) => {
       const aTags = verticalLine.querySelectorAll(".station a");
-      const height = aTags.length * 33; // 每個a標籤的高度是34px
+      const height = aTags.length * 34; // 每個a標籤的高度是34px
       verticalLine.style.setProperty("--height", height-10 + "px");
     });
   });
